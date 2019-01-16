@@ -24,3 +24,46 @@ li a {
 li a:hover {
   background-color: #111;
 }
+
+/* D3 visualization test for GINI index */
+body {
+    width: 800px;
+    margin: 20px auto;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 11px;
+}
+#GINI .axis line,
+#GINI .axis path {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+#GINI .axis--x line{
+    display: none;
+}
+#GINI .axis--x path {
+    display: none;
+}
+#GINI .axis--y path {
+    display: none;
+}
+h1, h3 {
+    text-align: center;
+}
+div.tooltip {   
+    position: absolute;           
+    text-align: left;           
+    width: auto;                  
+    height: auto;                 
+    padding: 8px;             
+    font: 12px sans-serif;        
+    background: black;   
+    border-radius: 0px;           
+    pointer-events: none;  
+    color: white;       
+}
+#GINI .mean {
+    stroke-width: 1px;
+    stroke: red;
+}
