@@ -1,5 +1,4 @@
-
-
+/* overall formatting*/
 body {
     width: 800px;
     margin: 20px auto;
@@ -7,25 +6,29 @@ body {
     font-weight: 300;
     font-size: 11px;
 }
-.axis line,
-.axis path {
+
+
+
+/* Unemployment D3 visualization */
+#unemployment .axis line,
+#unemployment .axis path {
     fill: none;
     stroke: #000;
     shape-rendering: crispEdges;
 }
-.axis--x line{
+#unemployment .axis--x line{
     display: none;
 }
-.axis--x path {
+#unemployment .axis--x path {
     display: none;
 }
-.axis--y path {
+#unemployment .axis--y path {
     display: none;
 }
 h1, h3 {
     text-align: center;
 }
-div.tooltip {   
+#unemployment div.tooltip {   
     position: absolute;           
     text-align: left;           
     width: auto;                  
@@ -37,7 +40,7 @@ div.tooltip {
     pointer-events: none;  
     color: white;       
 }
-.mean {
+#unemployment .mean {
     stroke-width: 1px;
     stroke: blue;
 }
