@@ -8,41 +8,69 @@
 </head>
 
 <body>
+
+<!--This list generates the menu bar -->
 <ul>
   <li><a href="index.html">Home</a></li>
   <li><a href="housing.html">Housing</a></li>
   <li><a href="indicators.html">Economic Indicators</a></li>
 </ul>
+
 	<h1>Economic Indicators in Massachusetts Opportunity Zones</h1>
+
+	<!--Median Income -->
+
 	<h2>Significant variations in median income risks investment cherry picking in the strongest communities</h2>
 	<p>A handful of communities in MA opportunity zone tracks seem to be doing pretty well economically. Policymakers and residents have not traditionally thought of these areas as needing investment and revitalization, as they are all above $60,000 in median income. Is there a risk of investment dollars flowing to communities already flourishing eocnomically siphoning resources from the areas most in need? </p>
-	<!--javascript insert between <script type="text/javascript">-->
+	<!--calling javascript files, embedding d3 bar chart median income-->
     <div id="medincome"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js" charset="utf-8"></script>
     <script src="./scripts/medincome.js"></script>
+    <!--bar chart median income notes -->
+    <p><small><strong>Data sources</strong>: <a href="https://datacommon.mapc.org/browser/datasets/117" target="_blank">MAPC 2012-2016 Median Household Income by Race (Census Tracts)</a>, <a href="http://bl.ocks.org/kaz-a/58224255b41e64810652d89b8f976673" target="_blank">D3 source code</a>. </small></p>
+    <p><small><strong>Data notes</strong>: Removed a Dorchester and Winthrop census tract due to poor data quality or missing data.</small></p>
 
+
+    
+    <!--Median Income Change -->
+	
 	<h2>Median Income Change</h2>
 	<p>Over half of MA opportunity zone census tract designations saw positive income growth in the last 8 years. This demonstrates a lack of focus on the most distressed communities. There is a risk that investors will prioritize investment in these growing communities accelerating gentrification and ignoring those with areas negative growth that would benefit most from investment.</p>
+	<!--embedding static income change bar chart-->
 	<img src="Median Income Change.PNG" width=800>
+	<!--bar chart median income change notes -->
+	<p><small><strong>Data sources</strong>: <a href="https://datacommon.mapc.org/browser/datasets/117" target="_blank">MAPC 2012-2016 Median Household Income by Race (Census Tracts)</a>, <a href="https://datacommon.mapc.org/browser/datasets/117" target="_blank">MAPC 2008-2012 Median Household Income by Race (Census Tracts)</a>, <a href="http://bl.ocks.org/kaz-a/58224255b41e64810652d89b8f976673" target="_blank">D3 source code</a>. </small></p>
+    <p><small><strong>Data notes</strong>: Removed a Mattapan, Dorchester, and Winthrop census tract due to poor data quality or missing data.</small></p>
 
-	
+
+
+	<!--GINI Coefficient-->
+
  	<h2>Income Inequality (Gini Coefficient)</h2>
 	<p>The Gini Coefficient is a measure of inequality. The Coefficient is measured by comparing perfect income distribution with the income distribution in a given area. The closer the coefficient to zero, the lower the level of inequality in a given census tract.</p>
 	<p>The table below displays the Gini Coefficient of 136* Opportunity Zones in Massachusetts. Only 36 are above the state-wide average of 0.484, indicating lower-than-average inequality.</p>
-	<h1>Majority of MA Opportunity Zones exhibit lower inequality compared to MA average</h1>
+	<h2>Majority of MA Opportunity Zones exhibit lower inequality compared to MA average</h2>
 	<h2>Gini Coefficient by MA Opportunity Zones</h2>
+	<!--calling javascript files, embedding d3 bar chart gini-->
 	<div id="GINI"></div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js" charset="utf-8"></script>
 	<script src="scripts/GINI.js"></script>	
-  
-	<h2>Almost 75% of Opportunity Zones experience unemployment rates higher than the state average</h1>
+	<!--bar chart gini notes -->
+  	<p><small><strong>Data sources</strong>: <a href="https://datacommon.mapc.org/browser/datasets/153" target="_blank">MAPC 2012-2016 Gini Index (Census Tracts)</a>, <a href="http://bl.ocks.org/kaz-a/58224255b41e64810652d89b8f976673" target="_blank">D3 source code</a>. </small></p>
+    <p><small><strong>Data notes</strong>: Removed a A and B census tract due to poor data quality or missing data.</small></p>
+
+
+  	<!--Unemployment-->
+
+	<h2>Almost 75% of Opportunity Zones experience unemployment rates higher than the state average</h2>
 	<h3>Unemployment rates in MA Opportunity Zones</h3>
     <!--javascript insert between <script type="text/javascript">-->
     <div id="unemployment"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js" charset="utf-8"></script>
     <script src="./scripts/unemploymentmain.js"></script>
     <!--dana's text about unemployment-->
-    <p>Data sources: Massachusetts Area Planning Council  <a href="https://datacommon.mapc.org/browser/datasets/128" target="_blank">DataCommon</a> and the <a href="https://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml" target="_blank">United States Census Bureau</a>. </p>
+    <p><small><strong>Data sources</strong>: <a href="https://datacommon.mapc.org/browser/datasets/128" target="_blank">MAPC 2012-2016 Labor Force (Census Tracts)</a>, <a href="http://bl.ocks.org/kaz-a/58224255b41e64810652d89b8f976673" target="_blank">D3 source code</a>. </small></p>
+    <p><small><strong>Data notes</strong>: Removed a Winthrop and Forestdale census tract due to poor data quality or missing data.</small></p>
 	<p>Unemployment is high in Opportunity Zones. 73% of Opportunity Zones in Massachusetts have an unemployment rate higher than the state average of 6.8%. Areas of Boston, Springfield and other cities have highest levels of unemployment across all Opportunity Zones. How can we ensure that investment targets the communities with the highest unemployment rates rather than cherry picking those near the MA median average? </p>
 </body>
 </html>
