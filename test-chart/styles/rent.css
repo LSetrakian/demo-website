@@ -5,25 +5,29 @@ body {
     font-weight: 300;
     font-size: 11px;
 }
-.axis line,
-.axis path {
+
+/*Rent D3 visualization*/
+#rent .axis line,
+#rent .axis path {
     fill: none;
     stroke: #000;
     shape-rendering: crispEdges;
 }
-.axis--x line{
+#rent .axis--x line{
     display: none;
 }
-.axis--x path {
+#rent .axis--x path {
     display: none;
 }
-.axis--y path {
+#rent .axis--y path {
     display: none;
 }
+
 h1, h3 {
     text-align: center;
 }
-div.tooltip {   
+
+#rent div.tooltip {   
     position: absolute;           
     text-align: left;           
     width: auto;                  
@@ -35,7 +39,7 @@ div.tooltip {
     pointer-events: none;  
     color: white;       
 }
-.mean {
+#rent .mean {
     stroke-width: 1px;
     stroke: blue
 }
