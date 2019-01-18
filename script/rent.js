@@ -29,7 +29,7 @@
             .style("opacity", 0);
       
 
-    d3.csv("/data/numrent/Number_Renters.csv", ready);
+    d3.csv("./data/numrent/Number_Renters.csv", ready);
 
     function ready(error, data) {
         if (error) throw error;
