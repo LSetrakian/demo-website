@@ -1,3 +1,12 @@
+/* Overall formatting */
+body {
+    width: 960px;
+    margin: 20px auto;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 11px;
+}
+
 
 /* Horizontal Navigation Bar */
 ul {
@@ -25,14 +34,7 @@ li a:hover {
   background-color: #111;
 }
 
-/* D3 visualization test for GINI index */
-body {
-    width: 800px;
-    margin: 20px auto;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    font-size: 11px;
-}
+/* GINI Coefficient D3 visualization */
 #GINI .axis line,
 #GINI .axis path {
     fill: none;
@@ -48,10 +50,12 @@ body {
 #GINI .axis--y path {
     display: none;
 }
-h1, h3 {
+
+h1, h2, h3 {
     text-align: center;
 }
-div.tooltip {   
+
+#GINI div.tooltip {   
     position: absolute;           
     text-align: left;           
     width: auto;                  
@@ -63,6 +67,7 @@ div.tooltip {
     pointer-events: none;  
     color: white;       
 }
+
 #GINI .mean {
     stroke-width: 1px;
     stroke: red;
