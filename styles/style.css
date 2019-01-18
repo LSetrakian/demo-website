@@ -186,3 +186,23 @@ h1, h3 {
     stroke-width: 1px;
     stroke: blue;
 }
+
+
+/* Housing Prod Scatter D3 visualization */
+#housingprod .axis path,
+#housingprod .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+#housingprod .dot {
+  stroke: #000;
+}
+
+#housingprod .tooltip {
+  position: absolute;
+  width: 200px;
+  height: 28px;
+  pointer-events: none;
+}
