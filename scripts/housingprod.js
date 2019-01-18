@@ -2,8 +2,8 @@
 // <!-- Example based on http://bl.ocks.org/mbostock/3887118 -->
 // <!-- Tooltip example from http://www.d3noob.org/2013/01/adding-tooltips-to-d3js-graph.html -->
 // <!-- Coding style based on http://gist.github.com/mbostock/5977197 -->
-
-var margin = {top: 10, right: 10, bottom: 100, left: 60},
+// Updated margins below
+var margin = {top: 10, right: 10, bottom: 20, left: 60},
     width = 900 - margin.left - margin.right,
     height = 600 - margin.top - margin.bottom;
 

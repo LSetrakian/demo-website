@@ -1,6 +1,7 @@
 (function() {
 // unemployment D3 visualization code!!!
-    var margin = {top: 10, right: 10, bottom: 100, left: 60};
+    // Updated margins below
+    var margin = {top: 10, right: 10, bottom: 20, left: 60};
 
     var width = 1000 - margin.left - margin.right,
         height = 600 - margin.top - margin.bottom;
