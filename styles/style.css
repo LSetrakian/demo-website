@@ -1,3 +1,12 @@
+/* Overall formatting */
+body {
+    width: 960px;
+    margin: 20px auto;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 11px;
+}
+
 
 /* Horizontal Navigation Bar */
 ul {
@@ -25,16 +34,84 @@ li a:hover {
   background-color: #111;
 }
 
-/* overall formatting*/
-body {
-    width: 800px;
-    margin: 20px auto;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    font-size: 11px;
+/* GINI Coefficient D3 visualization */
+#GINI .axis line,
+#GINI .axis path {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+#GINI .axis--x line{
+    display: none;
+}
+#GINI .axis--x path {
+    display: none;
+}
+#GINI .axis--y path {
+    display: none;
 }
 
+h1, h2, h3 {
+    text-align: center;
+}
 
+#GINI div.tooltip {   
+    position: absolute;           
+    text-align: left;           
+    width: auto;                  
+    height: auto;                 
+    padding: 8px;             
+    font: 12px sans-serif;        
+    background: black;   
+    border-radius: 0px;           
+    pointer-events: none;  
+    color: white;       
+}
+
+#GINI .mean {
+    stroke-width: 1px;
+    stroke: red;
+}
+
+/*Rent D3 visualization*/
+#rent .axis line,
+#rent .axis path {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+} 
+
+#rent .axis--x line{
+    display: none;
+}
+#rent .axis--x path {
+    display: none;
+}
+#rent .axis--y path {
+    display: none;
+}
+
+h1, h3 {
+    text-align: center;
+}
+
+#rent div.tooltip {   
+    position: absolute;           
+    text-align: left;           
+    width: auto;                  
+    height: auto;                 
+    padding: 8px;             
+    font: 12px sans-serif;        
+    background: black;   
+    border-radius: 0px;           
+    pointer-events: none;  
+    color: white;       
+} 
+
+#rent .mean {
+    stroke-width: 1px;
+    stroke: blue
+}
 
 /* Unemployment D3 visualization */
 #unemployment .axis line,
@@ -66,7 +143,8 @@ h1, h3 {
     border-radius: 0px;           
     pointer-events: none;  
     color: white;       
-}
+} 
+
 #unemployment .mean {
     stroke-width: 1px;
     stroke: blue;
