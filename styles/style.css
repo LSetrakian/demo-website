@@ -113,6 +113,43 @@ h1, h3 {
     stroke: blue
 }
 
+/* Medincome D3 visualization */
+#medincome .axis line,
+#medincome .axis path {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+#medincome .axis--x line{
+    display: none;
+}
+#medincome .axis--x path {
+    display: none;
+}
+#medincome .axis--y path {
+    display: none;
+}
+h1, h3 {
+    text-align: center;
+}
+#medincome div.tooltip {   
+    position: absolute;           
+    text-align: left;           
+    width: auto;                  
+    height: auto;                 
+    padding: 8px;             
+    font: 12px sans-serif;        
+    background: black;   
+    border-radius: 0px;           
+    pointer-events: none;  
+    color: white;       
+} 
+
+#medincome .mean {
+    stroke-width: 1px;
+    stroke: blue;
+}
+
 /* Unemployment D3 visualization */
 #unemployment .axis line,
 #unemployment .axis path {
