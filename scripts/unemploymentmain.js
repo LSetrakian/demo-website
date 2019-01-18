@@ -1,5 +1,5 @@
 (function() {
-// unemployment D3 visualization code!!!
+    // unemployment D3 visualization code!!!
     // Updated margins below
     var margin = {top: 10, right: 10, bottom: 20, left: 60};
 
@@ -49,11 +49,11 @@
             .append("g")
             .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-//modify code to pull our data
+        //modify code to pull our data
         x.domain(data.map(function(d) { return d.ID; }));
         y.domain([0, d3.max(data, function(d) { return d.unemp; })]);
         x2.domain(data.map(function(d) { return d.ID; }));
-//removed x-axis element
+        //removed x-axis element
         svg.append("g")
             .attr("class", "axis axis--x")
             .attr("transform", "translate(0," + height + ")");
@@ -76,7 +76,7 @@
             .text("Unemployment (%)");
 
         bars = svg.append("g").attr("class", "bars");
-//modify code to pull our data, update tooltip display
+        //modify code to pull our data, update tooltip display
         bars.selectAll(".bar")
             .data(data)
             .enter().append("rect")
@@ -104,7 +104,7 @@
 
         //edit code to assign "average" to our key datapoint 
         var average = 6.8;
-//edit code to pull our data
+        //edit code to pull our data
         var line = d3.svg.line()
             .x(function(d, i) { return x2(d.ID) + i; })
             .y(function(d, i) { return y(average); }); 
@@ -113,7 +113,7 @@
             .datum(data)
             .attr("class", "mean")
             .attr("d", line);
-//changed display name for average line
+        //changed display name for average line
         svg.append("text")
             .attr("transform", "translate(" + (width+3) + "," + y(average) + ")")
             .attr("dy", "1em")

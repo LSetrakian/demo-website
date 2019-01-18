@@ -25,13 +25,16 @@
 
     var color = d3.scale.category10();
 
+    //swap out 'body' for medincome ID
     var tooltip = d3.select("#medincome").append("div")   
             .attr("class", "tooltip")               
             .style("opacity", 0);
       
 
+    //input medincome.csv
     d3.csv("./data/medincome/medincome.csv", ready);
 
+    //modify function to read in medincome data column
     function ready(error, data) {
         if (error) throw error;
 
@@ -40,19 +43,20 @@
         });
 
         console.log("data", data);
-          
+        
+        //swap out 'body' for medincome ID     
         var svg = d3.select("#medincome").append("svg")
             .attr("width", width + margin.left + margin.right)
             .attr("height", height + margin.top + margin.bottom)
             .append("g")
             .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-            // .attr("class", "bar")
-            // .attr("id", "unemployment");
-
+           
+        //modify code to pull our data
         x.domain(data.map(function(d) { return d.id; }));
         y.domain([0, d3.max(data, function(d) { return d.medinc; })]);
         x2.domain(data.map(function(d) { return d.id; }));
 
+        //removed x-axis element
         svg.append("g")
             .attr("class", "axis axis--x")
             .attr("transform", "translate(0," + height + ")");
@@ -76,6 +80,7 @@
 
         bars = svg.append("g").attr("class", "bars");
 
+        //modify code to pull our data, update tooltip display
         bars.selectAll(".bar")
             .data(data)
             .enter().append("rect")
@@ -101,10 +106,10 @@
 
             });
 
-        // don't need this because I'm inserting MA's average
-        //var sum = d3.sum(data, function(d) { return d.unemp; }); 
+        //edit code to assign "average" to our key datapoint
         var average = 59039;
 
+        //edit code to pull our data
         var line = d3.svg.line()
             .x(function(d, i) { return x2(d.id) + i; })
             .y(function(d, i) { return y(average); }); 
@@ -114,6 +119,7 @@
             .attr("class", "mean")
             .attr("d", line);
 
+        //changed display name for average line
         svg.append("text")
             .attr("transform", "translate(" + (width+3) + "," + y(average) + ")")
             .attr("dy", "1em")
@@ -124,8 +130,3 @@
 
     }
 })();
-// this could be adapted to have info show up below once you click on a datapoint, 
-// if we use it, make sure to put semicolon after the click function, put it before mouseout
-        // .on("click", function(d){
-        //     alert(d.Town);
-        // })
