@@ -3,7 +3,7 @@
     var margin = {top: 10, right: 10, bottom: 100, left: 60};
 
     var width = 1000 - margin.left - margin.right,
-        height = 800 - margin.top - margin.bottom;
+        height = 600 - margin.top - margin.bottom;
 
     var x = d3.scale.ordinal()
         .rangeRoundBands([0,width],1);
@@ -114,8 +114,8 @@
             .attr("transform", "translate(" + (width+3) + "," + y(average) + ")")
             .attr("dy", "1em")
             .attr("text-anchor", "end")
-            .style("fill", "red")
-            .html("Average = 0.484");
+            .style("fill", "blue")
+            .html("MA Average: 0.484");
 
     }   
 })();

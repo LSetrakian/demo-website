@@ -69,8 +69,8 @@ h1, h2, h3 {
 }
 
 #GINI .mean {
-    stroke-width: 1px;
-    stroke: red;
+    stroke-width: 1.5px;
+    stroke: blue;
 }
 
 /*Rent D3 visualization*/
@@ -91,7 +91,7 @@ h1, h2, h3 {
     display: none;
 }
 
-h1, h3 {
+h1, h2, h3 {
     text-align: center;
 }
 
@@ -109,8 +109,45 @@ h1, h3 {
 } 
 
 #rent .mean {
-    stroke-width: 1px;
+    stroke-width: 1.5px;
     stroke: blue
+}
+
+/* Medincome D3 visualization */
+#medincome .axis line,
+#medincome .axis path {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+#medincome .axis--x line{
+    display: none;
+}
+#medincome .axis--x path {
+    display: none;
+}
+#medincome .axis--y path {
+    display: none;
+}
+h1, h2, h3 {
+    text-align: center;
+}
+#medincome div.tooltip {   
+    position: absolute;           
+    text-align: left;           
+    width: auto;                  
+    height: auto;                 
+    padding: 8px;             
+    font: 12px sans-serif;        
+    background: black;   
+    border-radius: 0px;           
+    pointer-events: none;  
+    color: white;       
+} 
+
+#medincome .mean {
+    stroke-width: 1.5px;
+    stroke: blue;
 }
 
 /* Unemployment D3 visualization */
@@ -146,10 +183,11 @@ h1, h3 {
 } 
 
 #unemployment .mean {
-    stroke-width: 1px;
+    stroke-width: 1.5px;
     stroke: blue;
 }
 
+/* Formatting for the case side by side comparison */
 #caseheader {
     width: 100%;
     background-color: white ;
@@ -179,6 +217,7 @@ h1, h3 {
     clear: both;
 }
 
+/* Format for the housing and indicators side by side */
 #optionheader {
     width: 100%;
     background-color:  #ebf5fb  ;
@@ -207,3 +246,23 @@ h1, h3 {
 #optionclear {
     clear: both;
 }
+
+/* Housing Prod Scatter D3 visualization */
+#housingprod .axis path,
+#housingprod .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+#housingprod .dot {
+  stroke: #000;
+}
+
+#housingprod .tooltip {
+  position: absolute;
+  width: 200px;
+  height: 28px;
+  pointer-events: none;
+}
+

@@ -2,7 +2,7 @@
 // unemployment D3 visualization code!!!
     var margin = {top: 10, right: 10, bottom: 100, left: 60};
 
-    var width = 800 - margin.left - margin.right,
+    var width = 1000 - margin.left - margin.right,
         height = 600 - margin.top - margin.bottom;
 
     var x = d3.scale.ordinal()
@@ -118,7 +118,7 @@
             .attr("dy", "1em")
             .attr("text-anchor", "end")
             .style("fill", "blue")
-            .html("MA average " + average + "%");
+            .html("MA Average: " + average + "%");
 
 
     }
