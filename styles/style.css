@@ -72,3 +72,41 @@ h1, h2, h3 {
     stroke-width: 1px;
     stroke: red;
 }
+
+/*Rent D3 visualization*/
+#rent .axis line,
+#rent .axis path {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+#rent .axis--x line{
+    display: none;
+}
+#rent .axis--x path {
+    display: none;
+}
+#rent .axis--y path {
+    display: none;
+}
+
+h1, h3 {
+    text-align: center;
+}
+
+#rent div.tooltip {   
+    position: absolute;           
+    text-align: left;           
+    width: auto;                  
+    height: auto;                 
+    padding: 8px;             
+    font: 12px sans-serif;        
+    background: black;   
+    border-radius: 0px;           
+    pointer-events: none;  
+    color: white;       
+}
+#rent .mean {
+    stroke-width: 1px;
+    stroke: blue
+}
