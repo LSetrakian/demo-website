@@ -1,0 +1,46 @@
+/* overall formatting*/
+body {
+    width: 800px;
+    margin: 20px auto;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 11px;
+}
+
+
+
+/* Unemployment D3 visualization */
+#unemployment .axis line,
+#unemployment .axis path {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+#unemployment .axis--x line{
+    display: none;
+}
+#unemployment .axis--x path {
+    display: none;
+}
+#unemployment .axis--y path {
+    display: none;
+}
+h1, h3 {
+    text-align: center;
+}
+#unemployment div.tooltip {   
+    position: absolute;           
+    text-align: left;           
+    width: auto;                  
+    height: auto;                 
+    padding: 8px;             
+    font: 12px sans-serif;        
+    background: black;   
+    border-radius: 0px;           
+    pointer-events: none;  
+    color: white;       
+}
+#unemployment .mean {
+    stroke-width: 1px;
+    stroke: blue;
+}
