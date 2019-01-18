@@ -29,7 +29,7 @@
             .style("opacity", 0);
       
 
-    d3.csv("GINI.csv", ready);
+    d3.csv("/data/GINI/GINI.csv", ready);
 
     function ready(error, data) {
         if (error) throw error;
