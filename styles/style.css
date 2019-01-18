@@ -9,7 +9,7 @@ body {
 
 
 /* Horizontal Navigation Bar */
-ul {
+dl {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -17,11 +17,11 @@ ul {
   background-color: #333;
 }
 
-li {
+dt {
   float: left;
 }
 
-li a {
+dt a {
   display: block;
   color: white;
   text-align: center;
@@ -30,7 +30,7 @@ li a {
 }
 
 /* Change the link color to #111 (black) on hover */
-li a:hover {
+dt a:hover {
   background-color: #111;
 }
 
@@ -187,6 +187,65 @@ h1, h3 {
     stroke: blue;
 }
 
+/* Formatting for the case side by side comparison */
+#caseheader {
+    width: 100%;
+    background-color: white ;
+    height: 150px;
+}
+
+#casecontainer {
+    width: 960px;
+    background-color: white ;
+    margin: auto;
+}
+#casefirst {
+    width: 440px;
+    margin: 20px;
+    float: left;
+    height: 150px;
+        background-color: #eaeded ;
+}
+#casesecond {
+    width: 440px;
+    margin: 20px;
+    float: right;
+    height: 150px;
+    background-color: #eaeded ;
+}
+#caseclear {
+    clear: both;
+}
+
+/* Format for the housing and indicators side by side */
+#optionheader {
+    width: 100%;
+    background-color:  #ebf5fb  ;
+    height: 10px;
+}
+
+#optioncontainer {
+    width: 960px;
+    background-color: #ebf5fb  ;
+    margin: auto;
+}
+#optionfirst {
+    width: 440px;
+    margin: 20px;
+    float: left;
+    height: 150px;
+        background-color: white ;
+}
+#optionsecond {
+    width: 440px;
+    margin: 20px;
+    float: right;
+    height: 150px;
+    background-color: white ;
+}
+#optionclear {
+    clear: both;
+}
 
 /* Housing Prod Scatter D3 visualization */
 #housingprod .axis path,
@@ -206,3 +265,4 @@ h1, h3 {
   height: 28px;
   pointer-events: none;
 }
+
