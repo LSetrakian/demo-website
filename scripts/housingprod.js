@@ -3,9 +3,9 @@
 // <!-- Tooltip example from http://www.d3noob.org/2013/01/adding-tooltips-to-d3js-graph.html -->
 // <!-- Coding style based on http://gist.github.com/mbostock/5977197 -->
 
-var margin = {top: 20, right: 20, bottom: 30, left: 40},
-    width = 960 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
+var margin = {top: 10, right: 10, bottom: 100, left: 60},
+    width = 900 - margin.left - margin.right,
+    height = 700 - margin.top - margin.bottom;
 
 /* 
  * value accessor - returns the value to encode for a given data object.

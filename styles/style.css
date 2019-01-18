@@ -69,8 +69,8 @@ h1, h2, h3 {
 }
 
 #GINI .mean {
-    stroke-width: 1px;
-    stroke: red;
+    stroke-width: 1.5px;
+    stroke: blue;
 }
 
 /*Rent D3 visualization*/
@@ -91,7 +91,7 @@ h1, h2, h3 {
     display: none;
 }
 
-h1, h3 {
+h1, h2, h3 {
     text-align: center;
 }
 
@@ -109,7 +109,7 @@ h1, h3 {
 } 
 
 #rent .mean {
-    stroke-width: 1px;
+    stroke-width: 1.5px;
     stroke: blue
 }
 
@@ -129,7 +129,7 @@ h1, h3 {
 #medincome .axis--y path {
     display: none;
 }
-h1, h3 {
+h1, h2, h3 {
     text-align: center;
 }
 #medincome div.tooltip {   
@@ -146,7 +146,7 @@ h1, h3 {
 } 
 
 #medincome .mean {
-    stroke-width: 1px;
+    stroke-width: 1.5px;
     stroke: blue;
 }
 
@@ -183,7 +183,7 @@ h1, h3 {
 } 
 
 #unemployment .mean {
-    stroke-width: 1px;
+    stroke-width: 1.5px;
     stroke: blue;
 }
 
