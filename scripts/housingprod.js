@@ -1,3 +1,4 @@
+// housingprod D3 visualization code!!!
 
 // <!-- Example based on http://bl.ocks.org/mbostock/3887118 -->
 // <!-- Tooltip example from http://www.d3noob.org/2013/01/adding-tooltips-to-d3js-graph.html -->
@@ -14,6 +15,7 @@ var margin = {top: 10, right: 10, bottom: 20, left: 60},
  * axis - sets up axis
  */ 
 
+//a1 comment: modify inputs to replace sample variables with households and housing starts
 // setup x 
 var xValue = function(d) { return d.households;}, // data -> value
     xScale = d3.scale.linear().range([0, width]), // value -> display
@@ -30,6 +32,7 @@ var yValue = function(d) { return d["housingstarts"];}, // data -> value
 var cValue = function(d) { return d.Manufacturer;},
     color = d3.scale.category10();
 
+//a1 comment: swap out 'body' for housingprod id
 // add the graph canvas to the body of the webpage
 var svg = d3.select("#housingprod").append("svg")
     .attr("width", width + margin.left + margin.right)
@@ -37,14 +40,17 @@ var svg = d3.select("#housingprod").append("svg")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
+//a1 comment: swap out 'body' for housingprod id
 // add the tooltip area to the webpage
 var tooltip = d3.select("#housingprod").append("div")
     .attr("class", "tooltip")
     .style("opacity", 0);
 
+//a1 comment: load houseproddata.csv
 // load data
 d3.csv("./data/houseprod/houseproddata.csv", function(error, data) {
 
+  //a1 comment: modify function to read in households and housingstarts
   // change string (from CSV) into number format
   data.forEach(function(d) {
     d.households = +d.households;
@@ -56,6 +62,8 @@ d3.csv("./data/houseprod/houseproddata.csv", function(error, data) {
   xScale.domain([d3.min(data, xValue)-1, d3.max(data, xValue)+1]);
   yScale.domain([d3.min(data, yValue)-1, d3.max(data, yValue)+1]);
 
+
+  //a1 comment: relabeled x-axis
   // x-axis
   svg.append("g")
       .attr("class", "x axis")
@@ -68,6 +76,7 @@ d3.csv("./data/houseprod/houseproddata.csv", function(error, data) {
       .style("text-anchor", "end")
       .text("Number of Households");
 
+  //a1 comment: relabeled y-axis
   // y-axis
   svg.append("g")
       .attr("class", "y axis")
@@ -79,7 +88,8 @@ d3.csv("./data/houseprod/houseproddata.csv", function(error, data) {
       .attr("dy", ".71em")
       .style("text-anchor", "end")
       .text("Number of Housing Starts");
-
+ 
+  // a1 comment: edit tooltip display text
   // draw dots
   svg.selectAll(".dot")
       .data(data)
@@ -104,6 +114,7 @@ d3.csv("./data/houseprod/houseproddata.csv", function(error, data) {
                .style("opacity", 0);
       });
 
+  //a1 comment: commented all of this out to remove legend
   // // draw legend
   // var legend = svg.selectAll(".legend")
   //     .data(color.domain())

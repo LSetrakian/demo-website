@@ -24,14 +24,15 @@
         .orient("left");
 
     var color = d3.scale.category10();
-
+    //swap out 'body' for GINI id
     var tooltip = d3.select("#GINI").append("div")   
             .attr("class", "tooltip")               
             .style("opacity", 0);
       
-
+    //input GINI.csv
     d3.csv("./data/GINI/GINI.csv", ready);
 
+    //modify function to read in GINI data column
     function ready(error, data) {
         if (error) throw error;
 
@@ -40,17 +41,17 @@
          });
 
         console.log("data", data);
-          
+        //swap out 'body' for GINI id   
         var svg = d3.select("#GINI").append("svg")
             .attr("width", width + margin.left + margin.right)
             .attr("height", height + margin.top + margin.bottom)
             .append("g")
             .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
+        //modify code to pull our data
         x.domain(data.map(function(d) { return d.Census; }));
         y.domain([0, d3.max(data, function(d) { return d.GINI; })]);
         x2.domain(data.map(function(d) { return d.Census; }));
-
+        //removed x-axis element
         svg.append("g")
             .attr("class", "axis axis--x")
             .attr("transform", "translate(0," + height + ")")
@@ -71,7 +72,8 @@
             .attr("dy", "0em")
             .attr("text-anchor", "end")
             .text("GINI Coefficient");
-
+        
+        //modify code to pull our data, update tooltip display
         bars = svg.append("g").attr("class", "bars");
         console.log(x);
         console.log(y);
@@ -98,10 +100,11 @@
 
             });
 
-        
+        //edit code to assign "average" to our key datapoint         
         // var sum = d3.sum(data, function(d) { return d.rent; }); 
         var average = 0.484;
-
+        
+        //edit code to pull our data
         var line = d3.svg.line()
             .x(function(d, i) { return x2(d.Census) + i; })
             .y(function(d, i) { return y(average); }); 
@@ -111,6 +114,7 @@
             .attr("class", "mean")
             .attr("d", line);
 
+        //changed display name for average line
         svg.append("text")
             .attr("transform", "translate(" + (width+3) + "," + y(average) + ")")
             .attr("dy", "1em")
