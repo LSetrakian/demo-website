@@ -212,13 +212,13 @@ h1, h3 {
 /* Format for the housing and indicators side by side */
 #optionheader {
     width: 100%;
-    background-color:  #ebf5fb  ;
+    background-color:  #333  ;
     height: 20px;
 }
 
 #optioncontainer {
     width: 960px;
-    background-color: #ebf5fb  ;
+    background-color: #333  ;
     margin: auto;
 }
 #optionfirst {
@@ -237,6 +237,21 @@ h1, h3 {
 }
 #optionclear {
     clear: both;
+}
+
+/*Change button color when hovering*/
+#optioncontainer a:link, #optioncontainer a:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid #333;
+    padding: 10px 10px;
+    text-decoration: none;
+/*    display: inline;*/
+}
+
+#optioncontainer a:hover, #optioncontainer a:active {
+    background-color: grey;
+    color: white;
 }
 
 /* Housing Prod Scatter D3 visualization */
