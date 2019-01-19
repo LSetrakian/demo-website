@@ -1,6 +1,6 @@
 /* Overall formatting */
 body {
-    width: 960px;
+    width: 1050px;
     margin: 20px auto;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
@@ -32,6 +32,28 @@ dt a {
 /* Change the link color to #111 (black) on hover */
 dt a:hover {
   background-color: #111;
+}
+
+/* Center any images*/
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+/* Add image to top of homepage and center text :)*/
+.container {
+    position: relative;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+
+.top-left {
+    position: absolute;
+    top: 30px;
+    left: 20px;
 }
 
 /* GINI Coefficient D3 visualization */
