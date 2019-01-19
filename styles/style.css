@@ -42,6 +42,19 @@ dt a:hover {
     width: 80%;
 }
 
+/* Add image to top of homepage*/
+.container {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
 /* GINI Coefficient D3 visualization */
 #GINI .axis line,
 #GINI .axis path {
