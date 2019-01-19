@@ -240,13 +240,13 @@ h1, h3 {
 }
 
 #optioncontainer {
-    width: 960px;
+    width: 100%;
     background-color:  #566573   ;
     margin: auto;
 }
 #optionfirst {
-    width: 425px;
-    margin: 20px;
+    width: 45%;
+    margin: 1%;
     float: left;
     height: 225px;
     border: 2px solid white;
@@ -254,8 +254,8 @@ h1, h3 {
     /*background-color: white*/ ;
 }
 #optionsecond {
-    width: 425px;
-    margin: 20px;
+    width: 45%;
+    margin: 1%;
     float: right;
     height: 225px;
     border: 2px solid white;
