@@ -1,7 +1,7 @@
 (function() {
 // medincome D3 visualization code!!!
     // Updated margins below
-    var margin = {top: 10, right: 10, bottom: 20, left: 60};
+    var margin = {top: 10, right: 10, bottom: 20, left: 75};
 
     var width = 1000 - margin.left - margin.right,
         height = 600 - margin.top - margin.bottom;
