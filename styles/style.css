@@ -183,7 +183,7 @@ h1, h3 {
 #caseheader {
     width: 100%;
     background-color: white ;
-    height: 150px;
+    height: 230px;
 }
 
 #casecontainer {
@@ -195,14 +195,14 @@ h1, h3 {
     width: 440px;
     margin: 20px;
     float: left;
-    height: 150px;
+    height: 190px;
         background-color: #eaeded ;
 }
 #casesecond {
     width: 440px;
     margin: 20px;
     float: right;
-    height: 150px;
+    height: 190px;
     background-color: #eaeded ;
 }
 #caseclear {
@@ -213,7 +213,7 @@ h1, h3 {
 #optionheader {
     width: 100%;
     background-color:  #ebf5fb  ;
-    height: 10px;
+    height: 20px;
 }
 
 #optioncontainer {
@@ -225,14 +225,14 @@ h1, h3 {
     width: 440px;
     margin: 20px;
     float: left;
-    height: 150px;
+    height: 210px;
         background-color: white ;
 }
 #optionsecond {
     width: 440px;
     margin: 20px;
     float: right;
-    height: 150px;
+    height: 210px;
     background-color: white ;
 }
 #optionclear {
