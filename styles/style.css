@@ -51,7 +51,7 @@ dt a:hover {
     display: none;
 }
 
-h1, h2, h3 {
+h1, h3 {
     text-align: center;
 }
 
@@ -89,11 +89,6 @@ h1, h2, h3 {
 }
 #rent .axis--y path {
     display: none;
-}
-
-h1, h2, h3 {
-    text-align: center;
-}
 
 #rent div.tooltip {   
     position: absolute;           
@@ -128,10 +123,7 @@ h1, h2, h3 {
 }
 #medincome .axis--y path {
     display: none;
-}
-h1, h2, h3 {
-    text-align: center;
-}
+
 #medincome div.tooltip {   
     position: absolute;           
     text-align: left;           
@@ -165,10 +157,7 @@ h1, h2, h3 {
 }
 #unemployment .axis--y path {
     display: none;
-}
-h1, h3 {
-    text-align: center;
-}
+
 #unemployment div.tooltip {   
     position: absolute;           
     text-align: left;           
