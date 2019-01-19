@@ -68,7 +68,7 @@
             .call(yAxis)
             .append("text")
             .attr("transform", "rotate(-90)")
-            .attr("y", 0)
+            .attr("y", 15)
             .attr("dy", "0em")
             .attr("text-anchor", "end")
             .text("GINI Coefficient");
