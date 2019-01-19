@@ -234,31 +234,47 @@ h1, h3 {
 /* Format for the housing and indicators side by side */
 #optionheader {
     width: 100%;
-    background-color:  #ebf5fb  ;
+    background-color:  #566573   ;
+    color: white;
     height: 20px;
 }
 
 #optioncontainer {
     width: 960px;
-    background-color: #ebf5fb  ;
+    background-color:  #566573   ;
     margin: auto;
 }
 #optionfirst {
-    width: 440px;
+    width: 425px;
     margin: 20px;
     float: left;
-    height: 210px;
-        background-color: white ;
+    height: 225px;
+    border: 2px solid white;
+    padding: 0px 5px 0px 5px;
+    /*background-color: white*/ ;
 }
 #optionsecond {
-    width: 440px;
+    width: 425px;
     margin: 20px;
     float: right;
-    height: 210px;
-    background-color: white ;
+    height: 225px;
+    border: 2px solid white;
+    padding: 0px 5px 0px 5px;
+    /*background-color: white ;*/
 }
 #optionclear {
     clear: both;
+}
+
+/*Change button color when hovering.  Could not get this to work properly, couldn't get the background color to change so stuck with just font!  Spent a lot of time on this!*/
+#optioncontainer a:link, #optioncontainer a:visited {
+    color: white;
+    text-decoration: none;
+    display: inline;
+}
+
+#optioncontainer a:hover, #optioncontainer a:active {
+    color:  #aed6f1 ;
 }
 
 /* Housing Prod Scatter D3 visualization */
