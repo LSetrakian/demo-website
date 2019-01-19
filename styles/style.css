@@ -34,6 +34,14 @@ dt a:hover {
   background-color: #111;
 }
 
+/* Center any images*/
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
 /* GINI Coefficient D3 visualization */
 #GINI .axis line,
 #GINI .axis path {
