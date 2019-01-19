@@ -1,6 +1,6 @@
 /* Overall formatting */
 body {
-    width: 960px;
+    width: 1050px;
     margin: 20px auto;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
@@ -42,17 +42,18 @@ dt a:hover {
     width: 80%;
 }
 
-/* Add image to top of homepage*/
+/* Add image to top of homepage and center text :)*/
 .container {
     position: relative;
     text-align: center;
     color: black;
+    font-size: 30px;
 }
 
 .top-left {
     position: absolute;
-    top: 8px;
-    left: 16px;
+    top: 30px;
+    left: 20px;
 }
 
 /* GINI Coefficient D3 visualization */
