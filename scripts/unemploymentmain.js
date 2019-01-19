@@ -70,7 +70,7 @@
             .call(yAxis)
             .append("text")
             .attr("transform", "rotate(-90)")
-            .attr("y", 10)
+            .attr("y", 15)
             .attr("dy", "0em")
             .attr("text-anchor", "end")
             .text("Unemployment (%)");
