@@ -202,30 +202,27 @@ h1, h3 {
 }
 
 /* Formatting for the case side by side comparison */
-#caseheader {
-    width: 100%;
-    background-color: white ;
-    height: 230px;
-}
 
 #casecontainer {
-    width: 960px;
+    width: 100%;
     background-color: white ;
     margin: auto;
 }
 #casefirst {
-    width: 440px;
-    margin: 20px;
+    width: 45%;
+    margin: 1%;
     float: left;
-    height: 190px;
-        background-color: #eaeded ;
+    height: 200px;
+    background-color: #eaeded ;
+    padding: 0px 5px 0px 5px;
 }
 #casesecond {
-    width: 440px;
-    margin: 20px;
+    width: 45%;
+    margin: 1%;
     float: right;
-    height: 190px;
+    height: 200px;
     background-color: #eaeded ;
+    padding: 0px 5px 0px 5px;
 }
 #caseclear {
     clear: both;
