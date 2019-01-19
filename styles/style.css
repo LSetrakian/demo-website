@@ -89,6 +89,7 @@ h1, h3 {
 }
 #rent .axis--y path {
     display: none;
+}
 
 #rent div.tooltip {   
     position: absolute;           
@@ -123,6 +124,7 @@ h1, h3 {
 }
 #medincome .axis--y path {
     display: none;
+}
 
 #medincome div.tooltip {   
     position: absolute;           
@@ -157,6 +159,7 @@ h1, h3 {
 }
 #unemployment .axis--y path {
     display: none;
+}
 
 #unemployment div.tooltip {   
     position: absolute;           
